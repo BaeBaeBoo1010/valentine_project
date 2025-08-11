@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7DAF1;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+}
+
+h1 {
+  color: #ff3366;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.game-name {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff3366;
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.gif-left {
+  position: absolute;
+  scale: 1.4;
+  top: 30%;
+  left: 150px;
+  z-index: 1;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.gif-right {
+  position: absolute;
+  scale: 1.4;
+  top: 30%;
+  right: 150px;
+  z-index: 1;
+  max-width: 500px;
+  max-height: 400px;
+  transform: rotateY(180deg);
+}
+
+canvas {
+  background-color: white;
+  border: 3px solid #ff3366;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: white;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 5px solid #ff3366;
+}
+
+button {
+  background-color: #ff3366;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: scale 0.15s, background-color 0.15s;
+}
+
+button:hover {
+  background-color: #ff6699;
+  box-shadow: 0 0 10px 3px grey;
+  scale: 1.05;
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  10% { transform: scale(1.05) rotate(5deg); }
+  20% { transform: scale(1.05) rotate(-5deg); }
+  30% { transform: scale(1.05) rotate(5deg); }
+  40% { transform: none; }
+}
+
+button:active {
+  background-color: #ff1a4d;
+  scale: 0.98;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 10px;
+  border: none;
+}
+
+.modal-buttons button {
+  width: 40%;
+}
+
+.confetti-canvas {
+  border: none;
+  border-radius: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}

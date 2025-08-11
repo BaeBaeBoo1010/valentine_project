@@ -1,0 +1,4 @@
+- Để chạy trang web, anh/chị/thầy/cô có thể vào terminal -> Chuyển đến thư mục này -> Gõ lệnh "npm start" để bắt đầu chạy trang web trên trình duyệt.
+
+- Hoặc anh/chị/thầy/cô có thể vào xem trang web của em theo đường link sau:
+https://inspiring-cucurucho-ee4ca1.netlify.app/
